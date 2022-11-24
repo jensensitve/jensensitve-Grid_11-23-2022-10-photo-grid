@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5px;
+}
+
+.container {
+    display: grid;
+    /*  grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    /* grid-template-columns: minmax(100px, 350px) 1fr minmax(100px, 350px);
+    Diese Variante ist nicht nachvollziehbar und komme nicht auf das visuelle Ergebnis*/
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* .container img {
+    width: 100%;
+    height: 100%
+} */
+
+.container img:nth-child(2),
+.container img:nth-child(5),
+.container img:nth-child(8) {
+    width: 100%;
+    height: 100%;
+}
+
+.container img:nth-child(1),
+.container img:nth-child(3),
+.container img:nth-child(4),
+.container img:nth-child(6),
+.container img:nth-child(7),
+.container img:nth-child(9) {
+    width: 100%;
+    height: 62%;
+}
